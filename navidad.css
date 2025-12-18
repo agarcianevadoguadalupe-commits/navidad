@@ -1,0 +1,190 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #0b6623, #b11226);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        header {
+            height: 100vh;
+            background-image: url("https://images.unsplash.com/photo-1543589077-47d81606c1bf");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+		.header-content {
+			position: relative;
+			z-index: 1;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 20px;
+		}
+		
+		.header-content p {
+		margin-bottom: 30px;
+		font-size: 1.2rem;
+		}
+
+
+        h1 {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-shadow: 3px 3px 10px black;
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #c1121f;
+            color: white;
+            border: 2px solid #ffd700;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffd700;
+            color: black;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 80px 10%;
+        }
+
+        .caja {
+            background-color: rgba(255,255,255,0.1);
+            border: 2px solid #ffd700;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        /* LISTAS */
+        ul {
+            list-style-type: square;
+            padding-left: 40px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* IMÁGENES */
+        .galeria {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .galeria img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid white;
+        }
+
+        /* TABLA AVANZADA */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 2px solid #c1121f;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #c1121f;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* POSICIONAMIENTO */
+        .regalo {
+            position: relative;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        .regalo img {
+            width: 100%;
+        }
+
+        .etiqueta {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: #c1121f;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0b6623;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer a {
+            color: #ffd700;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+		
+		audio {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 300px;
+		z-index: 999;
+		opacity: 0.85;
+		}
